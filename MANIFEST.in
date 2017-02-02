@@ -1,0 +1,3 @@
+graft miniblog/templates
+graft miniblog/static
+include miniblog.schema.sql

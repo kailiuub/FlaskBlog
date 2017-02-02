@@ -1,0 +1,1 @@
+from .miniblog import app
