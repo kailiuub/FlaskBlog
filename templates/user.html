@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<h1>Miniblog</h1>
+</head>
+
+<body>
+<a href="{{ url_for('logout') }}">log out</a>
+<form action="{{url_for('add')}}" method='post' class="add-entry">
+
+<dl>
+<dt>Title:
+<dd><input type="text" size="30" name="title"/>
+<dt>Content:
+<dd><textarea name="content" rows="5" cols="40"></textarea>
+<dt><input type="submit" value="Share"/>
+</dl>
+
+</form>
+
+{% for message in get_flashed_messages() %}
+    <div class="flash">{{ message }}</div>
+{% endfor %}
+
+<ul class="entries">
+  {% for entry in entries %}
+    <li><h3>{{ entry.title }}</h3>{{ entry.content}}</li>
+  {% endfor %}
+ 
+</ul>
+
+
+
+</body>
+
+</html>
