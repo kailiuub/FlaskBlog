@@ -7,8 +7,8 @@ This app is packaged by setuptools to allow for the installation in the local cl
 Before use, choose virtualenv or root environment to install flask package:
 
         pip install -r /path/to/requirements.txt
-
-  or    conda install flask
+  or    
+        conda install flask
 
 How to use it
 
