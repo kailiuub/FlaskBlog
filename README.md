@@ -4,6 +4,10 @@ The app allows one user to login, logout, post status.
 
 This app is packaged by setuptools to allow for the installation in the local client's machine. 
 
+Before use, choose virtualenv or root environment to install flask package:
+	pip install -r /path/to/requirements.txt
+or      conda install flask
+
 How to use it
 1. edit the configuration (config) in the flaskr.py file or
          export an FLASKR_SETTINGS environment variable
@@ -20,6 +24,8 @@ How to use it
 5. now you can run flaskr:
 
          flask run
+
+
 
 
       
